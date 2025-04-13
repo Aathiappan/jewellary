@@ -1,3 +1,22 @@
+# Jwellary shop appp
+
+This is jellery shop product showcasing app. Used to showcase jewellary.
+
+## Requirement
+- Create database jewellary
+## Setup
+- Modify Database name , db user name and password to ``` app/Config/Database.php ``` file.
+- Run ``` php spark migrate ``` cmd on terminal (on corresponding folder) used to create table for shield library and category table.
+- Create user using ``` php sprk shield:user create ``` cmd.
+- ``` php spark shield:user addGroup ``` cmd used to add user to admin group.
+- if you have webserver like apache or nginx you can run this app as vitual host or you can smply run by ``` php spark serve ``` cmd.
+- But, you should set base url in ``` app/Config/App.php ``` file
+
+## working
+ Now it only have admin page with add category and view. view that page url base_url().admin (base_url() - you already setup in the App.php config file). 
+
+Below details are codeigniter default readme details.
+
 # CodeIgniter 4 Framework
 
 ## What is CodeIgniter?
